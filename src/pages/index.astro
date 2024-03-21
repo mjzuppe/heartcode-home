@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro'
 import HomeHero from '../components/Home/HomeHero.astro' // TODO rename 'home'
 import LogoCloud from '../components/Home/LogoCloud.astro'
 import ServicesOverview from '../components/Home/ServicesOverview.astro'
+import Powerquote from '../components/shared/Powerquote.astro'
 import Process from '../components/shared/Process.astro'
 // import FeaturedWork from '@components/work/FeaturedWork.astro'
 // import Testimonials from '@components/shared/Testimonials.astro'
@@ -37,6 +38,14 @@ import { SITE } from '@config'
     </svg>
   </div> -->
 
+   {/* Powerquote section */}
+  <section
+  class="bg-gradient-to-b from-dark-900 to-dark-800 pb-12 pt-10 md:pb-16 md:pt-12"
+>
+<Powerquote />
+</section>
+
+  {/* Process section */}
   <section
     class="bg-gradient-to-b from-dark-900 to-dark-800 pb-12 pt-10 md:pb-16 md:pt-12"
   >

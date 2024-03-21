@@ -49,10 +49,10 @@ export const SITE: Site = {
 
 export const CONTACT: Contact = {
   address: {
-    street: '123 W. Kanye Street',
-    city: 'Los Angeles',
-    state: 'CA',
-    zip: '90001',
+    street: '100 Summit Dr.',
+    city: 'Burlington',
+    state: 'MA',
+    zip: '01803',
   },
   phone: '+1-202-555-0132',
   email: 'hello@crator.com',
