@@ -18,8 +18,7 @@ const {
   author = SITE.author,
   description = SITE.description,
   ogImage = SITE.ogImage,
-  canonicalURL = 'test.com'// new URL(Astro.url.pathname.replace(/\/$/, ''), Astro.site)
-    //.href,
+  canonicalURL = new URL(Astro.url.pathname.replace(/\/$/, ''), Astro.site).href,
 } = Astro.props
 
 const socialImageURL = new URL(ogImage ?? SITE.ogImage, Astro.url.origin).href
