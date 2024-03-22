@@ -28,7 +28,7 @@
   resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.7.7.tgz#26ea493a831b4f3a85475e7157be02fb4eab51fb"
   integrity sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==
 
-"@astrojs/check@^0.5.4", "@astrojs/check@^0.5.9":
+"@astrojs/check@^0.5.9":
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.5.9.tgz#dcbbe0241ca5da8b05865a715ec85f905ea3048b"
   integrity sha512-+QsQMtYq4oso+gmilJC9HLmdi0glZ+04V/VyyTTPry7n21jqjX9SfgDpLGxMk5cwPC/vwZMkn6ORGPnkZS/L5w==
@@ -991,13 +991,6 @@ astro-icon@^1.1.0:
     "@iconify/tools" "^3.0.1"
     "@iconify/types" "^2.0.0"
     "@iconify/utils" "^2.1.5"
-
-astro-seo@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.8.3.tgz#a9dd0169c7142a1ce47039156accfe055dc56870"
-  integrity sha512-gQeEh0U2yyVM0iyU8DTORK6hXMy5WH2wufrkUuNOKjI3LnYLniqgDxm1LZPQDuD6b4OHabVOi/5L88A9POCcCQ==
-  dependencies:
-    "@astrojs/check" "^0.5.4"
 
 astro@^4.5.6:
   version "4.5.6"
@@ -3032,6 +3025,11 @@ nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
+
+nanostores@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/nanostores/-/nanostores-0.10.0.tgz#cb69d295aa8cd39874721388c452c74a22feb68f"
+  integrity sha512-Poy5+9wFXOD0jAstn4kv9n686U2BFw48z/W8lms8cS8lcbRz7BU20JxZ3e/kkKQVfRrkm4yLWCUA6GQINdvJCQ==
 
 napi-build-utils@^1.0.1:
   version "1.0.2"
