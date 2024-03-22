@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://heartandcode.co/sitemap-index.xml
