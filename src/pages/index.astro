@@ -4,13 +4,16 @@ import HomeHero from '../components/Home/HomeHero.astro' // TODO rename 'home'
 import ServicesOverview from '../components/Home/ServicesOverview.astro'
 import Powerquote from '../components/shared/Powerquote.astro'
 import Process from '../components/shared/Process.astro'
+import LogoCloud from '../components/Home/LogoCloud.astro'
 import { SITE } from '@config'
 ---
 
-<Layout title={`Heart and Code | Websites, Marketing, and Managed IT Services`} description="Heart and Code is a Boston-based, agency blending the warmth of creativity with cutting-edge technology. We businesses get their online presence right in a constantly evolving digital landscape.">
+<Layout title={`Heart and Code - Boston | Online and Technology Agency`} description="Heart and Code is a Boston-based, agency blending the warmth of creativity with cutting-edge technology. We businesses get their online presence right in a constantly evolving digital landscape.">
   <HomeHero />
   <ServicesOverview />
-<Powerquote />
+<LogoCloud />
+  <Powerquote />
+
 </section>
 
 {/* Diagonal section separator */}
