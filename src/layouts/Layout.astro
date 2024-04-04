@@ -55,6 +55,8 @@ const socialImageURL = new URL(ogImage ?? SITE.ogImage, Astro.url.origin).href
 
     <ViewTransitions />
   </head>
+  <script defer src="https://analytics.us.umami.is/script.js" data-website-id="8502714c-bc11-4a35-9a98-18305d7620c8"></script> 
+  <!-- // TODO refactor ID to ENV -->
   <body>
     <Navbar />
     <main class="bg-dark-900"><slot /></main>
