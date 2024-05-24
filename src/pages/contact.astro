@@ -14,32 +14,6 @@ const addresses = [
   }
 ];
 
-const handleSubmit = async () => {
-  const data = await Astro.request.formData();
-    const name = data.get("name");
-    const email = data.get("email");
-    const phone = data.get("phone");
-    const message = data.get("message");
-    await fetch("https://submit-form.com/7kDQD0Blw", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, phone, message }),
-    }).then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-
-};
-
-if (Astro.request.method === "POST") {
-  handleSubmit();
-};
-
-
 ---
 <Layout
   title={`Contact us - ${SITE.title}`}
@@ -119,7 +93,7 @@ if (Astro.request.method === "POST") {
             x-data=""
             >
             {/* Contact form */}
-            <form x-ref="contactform" @submit.prevent method="POST" class="space-y-6">
+            <form x-data="contactForm()" @submit.prevent="submit" class="space-y-6">
               <TextField
                 name="name"
                 label="Name *"
@@ -160,4 +134,46 @@ if (Astro.request.method === "POST") {
     </div>
   </section>
 </Layout>
-
+<script>
+  import Alpine from "alpinejs";
+  
+    const ENDPOINT = "https://submit-form.com/7kDQD0Blw";
+    // TODO: this should be injecting Alpine on it's own without this declaration
+    Alpine.data('contactForm', () => (
+      function contactForm() {
+      return {
+        data: {
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        },
+        buttonText: "Submit",
+        loading: false,
+        submit() {
+          this.buttonText = "Submitting...";
+          this.loading = true;
+          
+          fetch(ENDPOINT, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(this.data),
+          })
+            .then((response) => {
+              this.data.message = "";
+              this.buttonText = "Submit";
+              this.loading = false;
+              window.location.href = "/submit";
+            })
+            .catch((error) => {
+              alert(error);
+            });
+        },
+      };
+    }
+    ));
+  </script>
+  
