@@ -1,0 +1,60 @@
+---
+import Layout from '@layouts/Layout.astro'
+import PrimaryButton from '@components/buttons/PrimaryButton.astro'
+import { SITE, SOCIALS } from '@config'
+
+const addresses = [
+
+]
+
+
+---
+
+<Layout
+  title={`Contact us - ${SITE.title}`}
+  description="Get in touch with our team to discuss how we can help bring your creative vision to life. Reach out to us for collaborative, innovative, and strategic web design and development services."
+>
+  <section class="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+    <div class="mx-auto max-w-screen-xl">
+      <div class="grid lg:grid-cols-2 lg:gap-x-8 xl:gap-x-16">
+        <div
+          class="flex flex-col items-start justify-between sm:items-center lg:items-start"
+        >
+          {/* Section header */}
+          <div>
+            <div class="w-full text-left sm:text-center lg:text-left">
+              <p
+                class="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-gradient-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white"
+              >
+                Submit Success.
+              </p>
+            </div>
+            <div
+              class="mt-4 w-full text-left sm:text-center md:mt-5 lg:text-left"
+            >
+              <h1
+                class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
+              >
+                We'll be in touch.
+              </h1>
+              <p
+                class="mx-auto mt-3 max-w-lg text-xl text-dark-500 sm:max-w-2xl md:mt-5"
+              >
+                Thank you for reaching out, we'll respond within 2 business days.
+              </p>
+              <div class="mt-12">
+                <PrimaryButton href="/">Done</PrimaryButton>
+              </div>
+            </div>
+          </div>
+          {/* Company locations */}
+        
+          {/* Social media links */}
+      
+        </div>
+     
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
