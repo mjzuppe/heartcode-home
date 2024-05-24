@@ -54,6 +54,7 @@ const socialImageURL = new URL(ogImage ?? SITE.ogImage, Astro.url.origin).href
     <meta property="twitter:image" content={socialImageURL} />
 
     <ViewTransitions />
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.10.5/dist/cdn.min.js"></script>
   </head>
   <script defer src="https://analytics.us.umami.is/script.js" data-website-id="8502714c-bc11-4a35-9a98-18305d7620c8"></script> 
   <!-- // TODO refactor ID to ENV -->
